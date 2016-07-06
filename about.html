@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>上海数造-公司介绍</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var flag= 0,$content=$(".ny-content-left li"),$contents=$(".ny-content-left li a");
+        $contents.click(function(){
+          $(this).addClass("active").parent().siblings().children().removeClass("active");
+        })
+        $content.click(function(){
+          $(".sub",this).slideDown().parent().siblings().children().next().slideUp();
+            if(flag==0){
+                $(".sub",this).filter(":not(:animated)").slideDown();
+                flag=1;
+            }else {
+                $(".sub",this).filter(":not(:animated)").slideUp();
+                flag=0;
+            }
+        })
+    })
+</script>
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <div class="top-welcome-box">
+             <div class="top-welcome"><span>欢迎来到公司子网站：<a href="#">上海数造三维科技有限公司</a></span> <img src="images/tel.png"><img src="images/flag.png">English
+             </div>
+        </div>
+        <div class="top-logo-box">
+           <div class="logo-box-in">
+               <div class="top-logo"><a href="index.html"><img src="images/logo.png"></a>中国3d数字化与3d打印技术先驱</div>
+               <div class="top-logo-nav">
+                   <ul>
+                       <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">公司介绍</a></li>
+                         <li><a href="news.html">公司资讯</a></li>
+                          <li><a href="contact.html">联系我们</a></li>
+                   </ul>
+               </div>
+           </div>
+        </div>
+        <div class="top-nav">
+            <div class="top-nav-box">
+
+              <div class="nav-box">
+               <ul>
+                <li><a href="case.html">3D打印机</a></a></li>
+                <li><a href="case.html">三维扫描仪</a></a></li>
+                <li><a href="case.html">材料</a></a></li>
+                <li><a href="solution.html">解决方案</a></a></li>
+                <li style=" background:none"><a href="#"> 3D数据云平台</a></a></li>            　           　                    　        
+               </ul>               
+              </div>
+           <div class="search-box">
+                 <form class="search">
+                    <input name="" type="text" placeholder="请输入搜索关键字" class="logo-nav" />
+                    <input name="" type="button" class="logo-button"  />
+                 </form>
+           </div>
+            </div>              
+        </div>
+               </div>
+               <div class="banner">
+                   <ul id="banner-pic">
+                       <li class="active"><img src="images/ny-banner.jpg" width="100%"></li>
+                       <li><img src="images/ny-banner2.jpg" width="100%"></li>
+                       <li><img src="images/ny-banner3.jpg" width="100%"></li>
+                   </ul>
+               </div>
+               <div class="ny-content">
+                                <div class="ny-content-left">
+                          <ul>
+                            <li><a href="javascript:" class="active">公司介绍</a>
+                                <ul class="sub" style="display: none;">
+                                  <li><a href="#">>公司简介</a></li>
+                                  <li><a href="#">>荣誉证书</a></li>
+                                  <li><a href="#">>发展历程</a></li>
+                                  <li><a href="#">>企业文化</a></li>
+                                  <li><a href="#">>团队风采</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:" class="inactive">广招贤才</a>
+                                <ul class="sub" style="display: none;">
+                                  <li><a href="#">>公司简介</a></li>
+                                  <li><a href="#">>荣誉证书</a></li>
+                                  <li><a href="#">>发展历程</a></li>
+                                  <li><a href="#">>企业文化</a></li>
+                                  <li><a href="#">>团队风采</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:" class="inactive">联系我们</a>
+                                <ul class="sub" style="display: none;">
+                                  <li><a href="#">>公司简介</a></li>
+                                  <li><a href="#">>荣誉证书</a></li>
+                                  <li><a href="#">>发展历程</a></li>
+                                  <li><a href="#">>企业文化</a></li>
+                                  <li><a href="#">>团队风采</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:" class="inactive">合作伙伴</a>
+                                <ul class="sub" style="display: none;">
+                                  <li><a href="#">>公司简介</a></li>
+                                  <li><a href="#">>荣誉证书</a></li>
+                                  <li><a href="#">>发展历程</a></li>
+                                  <li><a href="#">>企业文化</a></li>
+                                  <li><a href="#">>团队风采</a></li>
+                                </ul>
+                            </li>
+                          </ul>
+                     </div> 
+                     <div class="ny-content-right">
+                         <div class="Nycontent-right-title">
+                              <h1>公司介绍</h1><span>首页 > 公司介绍 > <a href="#">公司简介</a></span>
+                         </div>
+                         <div class="ny-box">
+                         <div class="Nycontent-introduce">
+                            <p>上海数造机电科技有限公司是一家专业提供3D领域技术综合解决方案的高科技企业，成立于2004年4月，法定代表人赵毅，经营业务及范围：从事“光机电一体化、计算机及网络”领域内技术开发、技术咨询、技术服务，计算机、软件及辅助设备（除计算机信息系统安全专用产品），机电设备、电子元器件、仪器仪表、文化办公用品、电器、机械设备、服装服饰销售，从事货物进出口及技术进出口业务。</p>
+       <p>自成立以来，上海数造始终不忘以发展民族高科技为己任的伟大使命，坚持以“为客户创造价值”为企业宗旨，秉持“勤奋、踏实、负责、进取、诚信、创新、专注、分享”的企业经营理念，时刻紧跟生产实践需求，创新进取，凭借雄厚的技术研发力量和多项国家技术专利，与国内知名高校上海交通大学及西安交通大学等相关科研单位密切合作，不断打造3D行业“数造”这一国内知名品牌。</p>
+      <p> 公司经过十余年的发展，搭建起了一支稳定、高效率的员工队伍，公司现有员工37人，其中全日制本科以上学历人数占比高达80%，其中硕士7人，博士1人，且主要来自西安交通大学、华中科技大学、西安电子科技大学、南昌大学等高校。</p>
+      <p>公司具有高素质的领导层：</p>
+      <p>1、赵毅：中国国籍，男，1968年10月出生，西安交通大学机械制造专业博士，上海数造公司法定代表人兼CTO，师从中国3D打印方面唯一的院士卢秉恒院士，先后创办上海联泰科技有限公司、上海数造机电科技有限公司。分别于1997年、2003年、2008年、2012年成功研发及产业化激光快速成型机、白光三维扫描仪、激光人体扫描仪、蓝光三维扫描仪。其中，白光扫描仪是数造的主流自营产品，经过 11 年的不断研发改进，形成了系列化产品，2010年3月，3DSS全自动定位白光三维扫描仪项目经上海市高新技术成果转化项目认定办公室及上海市高新技术转化服务中心认定为上海市高新技术成果转化项目。用于人体全身快速扫描（18 秒）的激光三维人体扫描仪，现已成为服装服饰行业炙手可热的高科技宠儿。</p>
+       <p>2、刘文新：公司CEO，中国国籍，男，1967年12月出生，西安交通大学管理学硕士，长江商学院EMBA，并先后担任大连东之杰运动产业发展有限公司总经理、宝胜国际CEO、青岛船歌餐饮管理有限公司CEO，其丰富的企业管理经验已促成公司实现了跨越式发展，2014年其任职由卢秉恒院士发起成立的中国增材制造（3D打印）产业技术创新战略联盟秘书长，将为公司带来更多的发展机遇。</p>
+       <img src="images/ny-introduce1.jpg"><img src="images/ny-introduce2.jpg">
+
+                         </div>
+                        <div class="business-advantage">
+                            <h2>主营业务</h2> 
+                           <p> 1、公司目前主营业务分为两大块：</p>
+                           <p>（1）3D打印及扫描设备：</p>
+                           <p>  自主研发、生产“数造”品牌的三维扫描仪、工业级SLA3D打印机；</p> 
+                           <p> 一级代理销售3D打印设备巨头Stratasys的进口3D打印设备；</p>
+                           <p> （2）提供专业扫描、逆向建模、3D打印服务及3D数字化整体解决方案。</p>
+                           <p> 2、核心竞争力：</p>
+                           <p> A. 技术全面，具备工业级SLA3D打印机、3D扫描仪、激光人体扫描仪的自主核心技术和研发生产的实力；</p>
+                           <p> B. 具备多年的3D扫描、逆向工程及3D打印、文物数字化等3D相关技术服务的工程及服务经验；</p>
+                           <p> C. 11年的技术沉淀和磨砺，打造了3D行业内“数造”这一国内知名品牌；</p>
+                           <p> D. 中国3D打印方面唯一的院士卢秉恒院士作为独立董事，行业影响力极大；</p>
+                           <p> E. 具有一支由工学博士、管理学硕士带领的分工协作，团结一致，开拓进取的公司团队；</p>
+                           <p> F. 具远大的战略规划和强烈的企业荣誉和使命感。</p>
+                           <h2>主要技术优势</h2>
+                           <p>1997年 研制出国内首台激光3D打印机</p>
+                           <p>1998年 公司创始人赵毅博士获国家教育部科技成果一等奖 </p>
+                           <img src="images/ny-introduce3.jpg">
+                           <p>2000年 获国家科技进步二等奖</p>
+                           <img src="images/ny-introduce4.jpg">
+                           <p>2003年 研制出具有国内领先水平的白光三维扫描仪</p>
+                           <img src="images/ny-introduce5.jpg"><img src="images/ny-introduce6.jpg"><img src="images/ny-introduce7.jpg">
+                        </div>
+                        </div>
+                     </div> 
+                      <div style="clear:both"></div>
+               </div>
+               <div class="bottom-index">
+                 <div class="chose-cp">
+                    <h3>帮您一起选最适合您的产品</h3>
+                    <div class="cp-font">点击在线筛选:</div> 
+                    <ul>
+                        <li><a href="#">三维扫描仪</a></li>
+                        <li><a href="#">3d打印机 </a></li>
+                        <li><a href="#">3D打印与扫描服务</a></li>
+                    </ul>
+                 </div>
+                 <div class="bottom-box">
+                     <div class="bottom-up">
+                          <div class="bottom-up-in"> 
+                             <div class="bottom-up-left">
+                                 <font>上海数造官方服务号</font>
+                                 及时获取数造
+                                 3d扫描与3d打印最新信息
+                                 <img src="images/qr-code1.jpg">
+                                 <span>微信公众平台</span>
+                             </div> 
+                             <div class="bottom-up-center">
+                <div class="ny-bottom-up">
+                  <ul>
+                     <li>
+                         <ul>
+                            <li style="font-size:14px"><a href="about.html">关于我们</a></li>
+                            <li><a href="about.html">公司简介</a></li>
+                            <li><a href="about.html">荣誉证书</a></li>
+                            <li><a href="about.html">发展历程</a></li>
+                            <li><a href="about.html">企业文化</a></li>
+                            <li><a href="about.html">团队风采</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <ul>
+                            <li style="font-size:14px"><a href="case.html">三维扫描仪</a></li>
+                            <li><a href="case.html">标准型三维扫描仪</a></li>
+                            <li><a href="case.html">精密型三维扫描仪</a></li>
+                            <li><a href="case.html">综合型三维扫描仪</a></li>
+                            <li><a href="case.html">幻影四目型三维扫描仪</a></li>
+                            <li><a href="case.html">蓝光系列三维扫描仪</a></li>
+                            <li><a href="case.html">激光人体三维扫描仪</a></li>
+                            <li><a href="case.html">彩色人像三维扫描仪</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <ul>
+                            <li  style="font-size:14px"><a href="case.html">3D打印机</a></li>
+                            <li><a href="case.html">SLA技术3D打印机</li>
+                            <li><a href="case.html">FDM技术3D打印机</a></li>
+                            <li><a href="case.html">Polyjet技术3D打印机</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <ul>
+                            <li  style="font-size:14px"><a href="case.html">3D打印机材料</a></li>
+                            <li><a href="case.html">光敏树脂材料</a></li>
+                            <li><a href="case.html">桌面机线材</a></li>
+                            <li><a href="case.html">FDM热塑性塑料</a></li>
+                            <li><a href="case.html">Polyjet光敏树脂</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <ul>
+                            <li  style="font-size:14px"><a href="case.html">3D数字化服务</a></li>
+                            <li><a href="case.html">三维扫描</a></li>
+                            <li><a href="case.html">逆向建模</a></li>
+                            <li><a href="case.html">3D打印</a></li>
+                            <li><a href="case.html">三维检测</a></li>
+                            <li><a href="case.html">文物数字化</a></li>
+                         </ul>
+                     </li>
+                </ul>
+            </div>
+
+ 
+                             </div> 
+                             <div class="bottom-up-right">
+                                  <font>上海数造官方服务号</font>
+                                 及时获取数造
+                                 3d扫描与3d打印最新信息
+                                 <img src="images/qr-code1.jpg">
+                                 <span>手机二维码</span>
+                             </div>           
+                          </div>
+                     </div>
+                     <div class="bottom-down">
+                         <div class="bottom-down-in">
+                             <div class="bottom-down-left">
+                                <span>地址:上海市浦东新区沪南公路8666弄智城工业园11栋　　　　邮箱：sales@digitalmanu.com</br>
+                              400热线：400-690-8069         销售部直线：021-31180558          销售经理：188-0031-5979(罗经理)<img src="images/cn22.jpg"></br>
+                              版权所有：上海数造机电科技有限公司　　　　沪ICP备13034732号-3　　　　　策划设计：志卓科技
+                                </span>
+                             </div>
+                             <div class="bottom-down-right">
+                                <a href="https://www.facebook.com" class="share_a public-a"></a>
+                                <a href="http://www.linkedin.com" class="share_b public-a"></a>
+                                <a href="http://www.youtube.com" class="share_c public-a"></a>
+                                <a href="https://www.qq.com" class="share_d public-a"></a>
+                                <a href="https://www.weixin.com" class="share_e public-a"></a>
+                                <a href="http://weibo.com" class="share_f public-a"></a>
+                                <font>上海数造3D数字化中心 三维数字技术领路者</font>
+                                <div class="bottom-down-nav"> 
+                                  <ul>
+                                    <li><a href="about.html">关于我们  |</a></li>
+                                    <li><a href="about.html">联系我们  |</a></li>
+                                    <li><a href="about.html">中心介绍  |</a></li>
+                                  </ul>
+                              </div>
+                             </div>
+                             <div style=" clear:both;"></div>
+                         </div>
+                     </div>
+                 </div>
+               </div>    
+           </div>
+                      <div class="side-bar"> 
+    <a href="contact.html" class="icon-mail">联系我们</a>  
+</div>  
+</body>
+</html>

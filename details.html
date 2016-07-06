@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>上海数造-详情页</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var flag= 0,$content=$(".ny-content-left li"),$contents=$(".ny-content-left li a");
+        $contents.click(function(){
+          $(this).addClass("active").parent().siblings().children().removeClass("active");
+        })
+        $content.click(function(){
+          $(".sub",this).slideDown().parent().siblings().children().next().slideUp();
+            if(flag==0){
+                $(".sub",this).filter(":not(:animated)").slideDown();
+                flag=1;
+            }else {
+                $(".sub",this).filter(":not(:animated)").slideUp();
+                flag=0;
+            }
+        })
+    })
+</script>
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <div class="top-welcome-box">
+             <div class="top-welcome"><span>欢迎来到公司子网站：<a href="#">上海数造三维科技有限公司</a></span> <img src="images/tel.png"><img src="images/flag.png">English
+             </div>
+        </div>
+        <div class="top-logo-box">
+           <div class="logo-box-in">
+               <div class="top-logo"><a href="index.html"><img src="images/logo.png"></a>中国3d数字化与3d打印技术先驱</div>
+               <div class="top-logo-nav">
+                   <ul>
+                       <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">公司介绍</a></li>
+                         <li><a href="news.html">公司资讯</a></li>
+                          <li><a href="contact.html">联系我们</a></li>
+                   </ul>
+               </div>
+           </div>
+        </div>
+        <div class="top-nav">
+            <div class="top-nav-box">
+
+              <div class="nav-box">
+               <ul>
+                <li><a href="case.html">3D打印机</a></a></li>
+                <li><a href="case.html">三维扫描仪</a></a></li>
+                <li><a href="case.html">材料</a></a></li>
+                <li><a href="solution.html">解决方案</a></a></li>
+                <li style=" background:none"><a href="#"> 3D数据云平台</a></a></li>            　           　                    　        
+               </ul>               
+              </div>
+           <div class="search-box">
+                 <form class="search">
+                    <input name="" type="text" placeholder="请输入搜索关键字" class="logo-nav" />
+                    <input name="" type="button" class="logo-button"  />
+                 </form>
+           </div>
+            </div>              
+        </div>
+               </div>
+               <div class="banner">
+                   <ul id="banner-pic">
+                       <li class="active"><img src="images/ny-banner.jpg" width="100%"></li>
+                       <li><img src="images/ny-banner2.jpg" width="100%"></li>
+                       <li><img src="images/ny-banner3.jpg" width="100%"></li>
+                   </ul>
+               </div>
+               <div class="ny-content">
+                                <div class="ny-content-left">
+                          <ul>
+                            <li><a href="javascript:" class="active">公司介绍</a>
+                                <ul class="sub" style="display: none;">
+                                  <li><a href="#">>公司简介</a></li>
+                                  <li><a href="#">>荣誉证书</a></li>
+                                  <li><a href="#">>发展历程</a></li>
+                                  <li><a href="#">>企业文化</a></li>
+                                  <li><a href="#">>团队风采</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:" class="inactive">广招贤才</a>
+                                <ul class="sub" style="display: none;">
+                                  <li><a href="#">>公司简介</a></li>
+                                  <li><a href="#">>荣誉证书</a></li>
+                                  <li><a href="#">>发展历程</a></li>
+                                  <li><a href="#">>企业文化</a></li>
+                                  <li><a href="#">>团队风采</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:" class="inactive">联系我们</a>
+                                <ul class="sub" style="display: none;">
+                                  <li><a href="#">>公司简介</a></li>
+                                  <li><a href="#">>荣誉证书</a></li>
+                                  <li><a href="#">>发展历程</a></li>
+                                  <li><a href="#">>企业文化</a></li>
+                                  <li><a href="#">>团队风采</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:" class="inactive">合作伙伴</a>
+                                <ul class="sub" style="display: none;">
+                                  <li><a href="#">>公司简介</a></li>
+                                  <li><a href="#">>荣誉证书</a></li>
+                                  <li><a href="#">>发展历程</a></li>
+                                  <li><a href="#">>企业文化</a></li>
+                                  <li><a href="#">>团队风采</a></li>
+                                </ul>
+                            </li>
+                          </ul>
+                     </div> 
+                     <div class="ny-content-right">
+                         <div class="details">
+                              <h1>公司资讯</h1>
+                              <span>先临三维桌面3D扫描仪EinScan-S入驻世界最大3D打印专业卖场iMakr </span>
+                              <font>发布时间：2015年12月22日　　　　阅读量：646</font>
+                         </div>
+                         <div class="details-content">
+                          <p>12月21日，杭州先临三维科技股份有限公司的桌面3D扫描仪EinScan-S正式入驻世界最大3D打印专业卖场iMakr。
+         iMakr是全球最大的3D打印相关产品的专业卖场，总部设在英国伦敦。目前是世界上极少数直接通过实体店面销售3D打印设备的专业经销商之一。iMakr为外界所陈道的是其对供货商的严苛程度。按照以往惯例，都是经过大量测试后，只会保留少数几个。那些品质达不到iMakr要求的机器则被直接淘汰出iMakr的货架。</p>
+         <p>先临三维桌面3D扫描仪EinScan-S经过iMakr工程师长达一个半月的测试，通过层层质量检验之后成功通过考验，入驻iMakr.com在线商店，同时， EinScan-S 桌面扫描仪还入住iMakr旗下的两家3D打印实体商店（一家在伦敦，一家在纽约）。这也意味着iMakr.com 正式面向全球市场销售先临桌面3D扫描仪EinScan-S。而在测试中，iMakr的测试工程师对桌面3D扫描仪EinScan-S评价也非常高，他们认为EinScan-S 是市面最具竞争力的桌面3D扫描仪。</p>
+        
+        <p>以下为过iMakr工程师对EinScan-S的评价：</p><img src="images/201512221432198.png">
+         <p>翻译过来是：</p>
+        <p>① EinScan-S扫描精细度非常高</p>
+        <p>② 扫描软件具有用户友好性：</p>
+            <p>保存STL文件前可调整数据大小</p>
+            <p>在自由扫描模式下可输出单片扫描数据</p>
+            <p>可支持纹理扫描</p>
+       <p>③ 校准算法好</p>
+       <p>④ 闭合性好， 输出密合模型</p>
+       <p>⑤ 速度快、性价比高</p>
+       <p>⑥ 易标定</p>
+       <p>⑦ 可输出点云</p><img src="images/201512221434223.png">
+
+ 
+ 
+
+                         </div>
+                     </div> 
+                    <div style="clear:both"></div>
+               </div>
+               <div class="bottom-index">
+                 <div class="chose-cp">
+                    <h3>帮您一起选最适合您的产品</h3>
+                    <div class="cp-font">点击在线筛选:</div> 
+                    <ul>
+                        <li><a href="#">三维扫描仪</a></li>
+                        <li><a href="#">3d打印机 </a></li>
+                        <li><a href="#">3D打印与扫描服务</a></li>
+                    </ul>
+                 </div>
+                 <div class="bottom-box">
+                     <div class="bottom-up">
+                          <div class="bottom-up-in"> 
+                             <div class="bottom-up-left">
+                                 <font>上海数造官方服务号</font>
+                                 及时获取数造
+                                 3d扫描与3d打印最新信息
+                                 <img src="images/qr-code1.jpg">
+                                 <span>微信公众平台</span>
+                             </div> 
+                             <div class="bottom-up-center">
+                <div class="ny-bottom-up">
+                  <ul>
+                     <li>
+                         <ul>
+                            <li style="font-size:14px"><a href="about.html">关于我们</a></li>
+                            <li><a href="about.html">公司简介</a></li>
+                            <li><a href="about.html">荣誉证书</a></li>
+                            <li><a href="about.html">发展历程</a></li>
+                            <li><a href="about.html">企业文化</a></li>
+                            <li><a href="about.html">团队风采</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <ul>
+                            <li style="font-size:14px"><a href="case.html">三维扫描仪</a></li>
+                            <li><a href="case.html">标准型三维扫描仪</a></li>
+                            <li><a href="case.html">精密型三维扫描仪</a></li>
+                            <li><a href="case.html">综合型三维扫描仪</a></li>
+                            <li><a href="case.html">幻影四目型三维扫描仪</a></li>
+                            <li><a href="case.html">蓝光系列三维扫描仪</a></li>
+                            <li><a href="case.html">激光人体三维扫描仪</a></li>
+                            <li><a href="case.html">彩色人像三维扫描仪</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <ul>
+                            <li  style="font-size:14px"><a href="case.html">3D打印机</a></li>
+                            <li><a href="case.html">SLA技术3D打印机</li>
+                            <li><a href="case.html">FDM技术3D打印机</a></li>
+                            <li><a href="case.html">Polyjet技术3D打印机</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <ul>
+                            <li  style="font-size:14px"><a href="case.html">3D打印机材料</a></li>
+                            <li><a href="case.html">光敏树脂材料</a></li>
+                            <li><a href="case.html">桌面机线材</a></li>
+                            <li><a href="case.html">FDM热塑性塑料</a></li>
+                            <li><a href="case.html">Polyjet光敏树脂</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <ul>
+                            <li  style="font-size:14px"><a href="case.html">3D数字化服务</a></li>
+                            <li><a href="case.html">三维扫描</a></li>
+                            <li><a href="case.html">逆向建模</a></li>
+                            <li><a href="case.html">3D打印</a></li>
+                            <li><a href="case.html">三维检测</a></li>
+                            <li><a href="case.html">文物数字化</a></li>
+                         </ul>
+                     </li>
+                </ul>
+            </div>
+
+ 
+                             </div> 
+                             <div class="bottom-up-right">
+                                  <font>上海数造官方服务号</font>
+                                 及时获取数造
+                                 3d扫描与3d打印最新信息
+                                 <img src="images/qr-code1.jpg">
+                                 <span>手机二维码</span>
+                             </div>           
+                          </div>
+                     </div>
+                     <div class="bottom-down">
+                         <div class="bottom-down-in">
+                             <div class="bottom-down-left">
+                                <span>地址:上海市浦东新区沪南公路8666弄智城工业园11栋　　　　邮箱：sales@digitalmanu.com</br>
+                              400热线：400-690-8069         销售部直线：021-31180558          销售经理：188-0031-5979(罗经理)<img src="images/cn22.jpg"></br>
+                              版权所有：上海数造机电科技有限公司　　　　沪ICP备13034732号-3　　　　　策划设计：志卓科技
+                                </span>
+                             </div>
+                             <div class="bottom-down-right">
+                                <a href="https://www.facebook.com" class="share_a public-a"></a>
+                                <a href="http://www.linkedin.com" class="share_b public-a"></a>
+                                <a href="http://www.youtube.com" class="share_c public-a"></a>
+                                <a href="https://www.qq.com" class="share_d public-a"></a>
+                                <a href="https://www.weixin.com" class="share_e public-a"></a>
+                                <a href="http://weibo.com" class="share_f public-a"></a>
+                                <font>上海数造3D数字化中心 三维数字技术领路者</font>
+                                <div class="bottom-down-nav"> 
+                                  <ul>
+                                    <li><a href="about.html">关于我们  |</a></li>
+                                    <li><a href="about.html">联系我们  |</a></li>
+                                    <li><a href="about.html">中心介绍  |</a></li>
+                                  </ul>
+                              </div>
+                             </div>
+                             <div style=" clear:both;"></div>
+                         </div>
+                     </div>
+                 </div>
+               </div>    
+           </div>
+                      <div class="side-bar"> 
+    <a href="contact.html" class="icon-mail">联系我们</a>  
+</div>  
+</body>
+</html>
